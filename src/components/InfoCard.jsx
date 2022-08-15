@@ -9,11 +9,11 @@ const InfoCard = () => {
   const [fact, setFact] = useState([]);
   useEffect(() => {
     const getFact = async () => {
-      const response = await axios.get(
-        "https://zoo-animal-api.herokuapp.com/animals/rand"
-      );
-      console.log(response);
-      setFact(response.data.diet);
+      const response = await axios.get("facts.json");
+      var randomNumber = Math.floor(Math.random() * 14) + 1;
+      console.log(randomNumber);
+
+      setFact(response.data[randomNumber]);
     };
     getFact();
   }, []);
