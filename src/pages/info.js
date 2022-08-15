@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../components/Card";
+import InfoCard from "../components/InfoCard";
 
 const Info = () => {
   const [image, setImage] = useState([]);
@@ -15,11 +16,7 @@ const Info = () => {
     getImages();
   }, []);
 
-  return (
-    <div>
-      <Card image={image} />
-    </div>
-  );
+  return <InfoCard />;
 };
 
 export default Info;

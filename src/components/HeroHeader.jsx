@@ -2,10 +2,10 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const HeroHeader = () => {
-  const buttonOne = "See Info";
+  const buttonOne = "Get Info";
   return (
     <div className="hero-wrapper">
-      <h1 class="hero-text">Learn about Dogs!</h1>
+      <h1 class="hero-text">Let's learn about dogs!</h1>
       <Link to="/info">
         <Button text={buttonOne} />
       </Link>
