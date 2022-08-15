@@ -12,7 +12,7 @@ const InfoCard = () => {
       const response = await axios.get(
         "https://zoo-animal-api.herokuapp.com/animals/rand"
       );
-      console.log(response.data.diet);
+      console.log(response);
       setFact(response.data.diet);
     };
     getFact();

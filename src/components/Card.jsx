@@ -13,9 +13,8 @@ const Card = (props) => {
             <div className="img-wrapper">
               <img className="clip-sq" src={image} alt="poster" />
             </div>
-
             <Link to="/info">
-              <Button text={buttonText} />
+              <Button text={buttonText} style={{ paddingTop: "15px" }} />
             </Link>
           </div>
         </div>
