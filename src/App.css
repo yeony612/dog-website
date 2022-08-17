@@ -123,7 +123,13 @@ button:hover {
 
 .info-card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 3rem;
+  padding: 3rem 4rem;
   margin: 5rem;
   border-radius: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
