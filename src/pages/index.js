@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-
-import Button from "../components/Button";
 import Card from "../components/Card";
 import HeroHeader from "../components/HeroHeader";
 
